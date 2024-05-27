@@ -1,0 +1,14 @@
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\bin\Debug\net7.0\EmployeeManagementDAL.deps.json
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\bin\Debug\net7.0\EmployeeManagementDAL.dll
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\bin\Debug\net7.0\EmployeeManagementDAL.pdb
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\obj\Debug\net7.0\EmployeeManagementDAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\obj\Debug\net7.0\EmployeeManagementDAL.AssemblyInfoInputs.cache
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\obj\Debug\net7.0\EmployeeManagementDAL.AssemblyInfo.cs
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\obj\Debug\net7.0\EmployeeManagementDAL.csproj.CoreCompileInputs.cache
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\obj\Debug\net7.0\EmployeeManagementDAL.dll
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\obj\Debug\net7.0\refint\EmployeeManagementDAL.dll
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\obj\Debug\net7.0\EmployeeManagementDAL.pdb
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\obj\Debug\net7.0\ref\EmployeeManagementDAL.dll
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\bin\Debug\net7.0\EmployeeManagementDAL.runtimeconfig.json
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\obj\Debug\net7.0\EmployeeManagementDAL.csproj.AssemblyReference.cache
+D:\Projects\EmployeeManagement\employee-managment-api\EmployeeManagementDAL\obj\Debug\net7.0\EmployeeManagementDAL.genruntimeconfig.cache
