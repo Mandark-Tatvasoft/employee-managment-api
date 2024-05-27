@@ -13,6 +13,18 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddScoped<IEmployee, EmployeeRepo>();
+builder.Services.AddScoped<IDesignation, DesignatonRepo>();
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+    builder =>
+    {
+        builder.AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+    });
+});
+
 
 var app = builder.Build();
 
@@ -24,6 +36,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors();
 
 app.UseAuthorization();
 

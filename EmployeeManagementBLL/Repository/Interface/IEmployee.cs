@@ -1,14 +1,15 @@
 using EmployeeManagementDAL.Data;
+using EmployeeManagementDAL.Models;
 
 namespace EmployeeManagementBLL.Repository.Interface;
 
 public interface IEmployee
 {
-    public List<Employee> GetAllEmployees();
+    public List<EmployeeModel> GetAllEmployees();
 
     public Employee GetEmployee(int id);
 
-    public void AddEmployee(Employee employee);
+    public void AddEmployee(EmployeeModel employee);
 
     public void EditEmployee(Employee employee);
 

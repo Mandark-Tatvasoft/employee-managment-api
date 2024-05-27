@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using EmployeeManagementDAL.Data;
 using EmployeeManagementBLL.Repository.Interface;
+using EmployeeManagementDAL.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace EmployeeManagement.Controllers;
 
 [ApiController]
 [Route("[controller]")]
+[EnableCors()]
 public class EmployeesController : ControllerBase
 {
     private readonly IEmployee _employee;
@@ -28,9 +31,9 @@ public class EmployeesController : ControllerBase
     }
 
     [HttpPost("AddEmployee")]
-    public IActionResult Post([FromBody] Employee employee)
+    public IActionResult Post([FromBody] EmployeeModel employee)
     {
-        _employee.AddEmployee(employee);
+        _employee.AddEmployee(employee);    
         return RedirectToAction("Get");
     }
 

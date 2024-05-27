@@ -1,6 +1,7 @@
 using EmployeeManagementBLL.Repository.Interface;
 using EmployeeManagementDAL.Context;
 using EmployeeManagementDAL.Data;
+using EmployeeManagementDAL.Models;
 
 namespace EmployeeManagementBLL.Repository;
 
@@ -13,9 +14,23 @@ public class EmployeeRepo : IEmployee
         _context = context;
     }
 
-    public List<Employee> GetAllEmployees()
+    public List<EmployeeModel> GetAllEmployees()
     {
-        return _context.Employees.ToList();
+        var list = _context.Employees.ToList();
+        var model = new List<EmployeeModel>();
+
+        foreach (var employee in list)
+        {
+            model.Add(new EmployeeModel { 
+                Id = employee.EmployeeId,
+                Firstname = employee.Firstname,
+                Lastname = employee.Lastname,
+                Salary = employee.Salary,
+                Designation = employee.Designation
+            });
+        }
+
+        return model;
     }
 
     public Employee GetEmployee(int id)
@@ -23,9 +38,16 @@ public class EmployeeRepo : IEmployee
         return _context.Employees.FirstOrDefault(e => e.EmployeeId == id);
     }
 
-    public void AddEmployee(Employee employee)
+    public void AddEmployee(EmployeeModel employee)
     {
-        _context.Employees.Add(employee);
+        var model = new Employee {
+            Firstname = employee.Firstname,
+            Lastname = employee.Lastname,
+            Designation = employee.Designation,
+            Salary = employee.Salary,
+        };
+        
+        _context.Employees.Add(model);
         _context.SaveChanges();
     }
 
