@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagement\\EmployeeManagement.csproj": {}
+    "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagement\\EmployeeManagement.csproj": {}
   },
   "projects": {
-    "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj": {
+    "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj",
+        "projectUniqueName": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj",
         "projectName": "EmployeeManagementBLL",
-        "projectPath": "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj",
-        "packagesPath": "C:\\Users\\manda\\.nuget\\packages\\",
-        "outputPath": "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementBLL\\obj\\",
+        "projectPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj",
+        "packagesPath": "C:\\Users\\pct46\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementBLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\manda\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\pct46\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj": {
-                "projectPath": "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj"
+              "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj": {
+                "projectPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj"
               }
             }
           }
@@ -63,25 +59,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj": {
+    "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj",
+        "projectUniqueName": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj",
         "projectName": "EmployeeManagementDAL",
-        "projectPath": "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj",
-        "packagesPath": "C:\\Users\\manda\\.nuget\\packages\\",
-        "outputPath": "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementDAL\\obj\\",
+        "projectPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj",
+        "packagesPath": "C:\\Users\\pct46\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\manda\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\pct46\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -144,25 +136,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagement\\EmployeeManagement.csproj": {
+    "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagement\\EmployeeManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagement\\EmployeeManagement.csproj",
+        "projectUniqueName": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagement\\EmployeeManagement.csproj",
         "projectName": "EmployeeManagement",
-        "projectPath": "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagement\\EmployeeManagement.csproj",
-        "packagesPath": "C:\\Users\\manda\\.nuget\\packages\\",
-        "outputPath": "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagement\\obj\\",
+        "projectPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagement\\EmployeeManagement.csproj",
+        "packagesPath": "C:\\Users\\pct46\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagement\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\manda\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\pct46\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,11 +164,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj": {
-                "projectPath": "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj"
+              "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj": {
+                "projectPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj"
               },
-              "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj": {
-                "projectPath": "C:\\Mandark\\Office\\employee-management\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj"
+              "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj": {
+                "projectPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj"
               }
             }
           }
@@ -247,7 +235,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
