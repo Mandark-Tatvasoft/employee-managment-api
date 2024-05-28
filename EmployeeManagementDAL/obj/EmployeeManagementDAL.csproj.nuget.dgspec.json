@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj": {}
+    "d:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj": {
+    "d:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj",
+        "projectUniqueName": "d:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj",
         "projectName": "EmployeeManagementDAL",
-        "projectPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj",
+        "projectPath": "d:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj",
         "packagesPath": "C:\\Users\\pct46\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\obj\\",
+        "outputPath": "d:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pct46\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,5 +1,6 @@
 using EmployeeManagementBLL.Repository.Interface;
 using EmployeeManagementDAL.Data;
+using EmployeeManagementDAL.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeManagement.Controllers;
@@ -22,16 +23,23 @@ public class DesignationsController : ControllerBase
     }
 
     [HttpPut("EditDesignation")]
-    public IActionResult Put([FromBody] Designation designation)
+    public IActionResult Put([FromBody] DesignationModel designation)
     {
         _designation.EditDesignation(designation);
-        return RedirectToAction("Get");
+        return Ok();
     }
 
     [HttpDelete("DeleteDesignation")]
     public IActionResult Delete(int id)
     {
         _designation.DeleteDesignation(id);
-        return RedirectToAction("Get");
+        return Ok();
+    }
+
+    [HttpPost("AddDesignation")]
+    public IActionResult Post(DesignationModel model)
+    {
+        _designation.AddDesignation(model);
+        return Ok();
     }
 }

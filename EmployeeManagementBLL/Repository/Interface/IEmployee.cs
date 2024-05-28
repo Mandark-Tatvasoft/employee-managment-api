@@ -7,11 +7,11 @@ public interface IEmployee
 {
     public List<EmployeeModel> GetAllEmployees();
 
-    public Employee GetEmployee(int id);
+    public EmployeeModel GetEmployee(int id);
 
     public void AddEmployee(EmployeeModel employee);
 
-    public void EditEmployee(Employee employee);
+    public void EditEmployee(EmployeeModel employee);
 
     public void DeleteEmployee(int id);
 }

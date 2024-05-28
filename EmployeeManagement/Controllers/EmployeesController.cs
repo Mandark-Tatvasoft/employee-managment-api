@@ -34,20 +34,20 @@ public class EmployeesController : ControllerBase
     public IActionResult Post([FromBody] EmployeeModel employee)
     {
         _employee.AddEmployee(employee);    
-        return RedirectToAction("Get");
+        return Ok();
     }
 
     [HttpPut("UpdateEmployeeDetails")]
-    public IActionResult Put([FromBody] Employee employee)
+    public IActionResult Put([FromBody] EmployeeModel employee)
     {
         _employee.EditEmployee(employee);
-        return RedirectToAction("Get");
+        return Ok();
     }
 
     [HttpDelete("DeleteEmployee")]
     public IActionResult Delete(int id)
     {
         _employee.DeleteEmployee(id);
-        return RedirectToAction("Get");
+        return Ok();
     }
 }

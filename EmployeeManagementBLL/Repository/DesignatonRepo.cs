@@ -1,6 +1,7 @@
 using EmployeeManagementBLL.Repository.Interface;
 using EmployeeManagementDAL.Context;
 using EmployeeManagementDAL.Data;
+using EmployeeManagementDAL.Models;
 
 namespace EmployeeManagementBLL.Repository;
 
@@ -13,9 +14,19 @@ public class DesignatonRepo : IDesignation
         _context = context;
     }
 
-    public List<Designation> GetAllDesignations()
+    public List<DesignationModel> GetAllDesignations()
     {
-        return _context.Designations.ToList();
+        var model = new List<DesignationModel>();
+        var list = _context.Designations.ToList();
+        foreach (var item in list)
+        {
+            model.Add(new DesignationModel{
+                DesignationId = item.DesignationId,
+                DesignationName = item.DesignationName
+            });
+        }
+
+        return model;
     }
     public void DeleteDesignation(int id)
     {
@@ -23,13 +34,24 @@ public class DesignatonRepo : IDesignation
         if(designation != null)
         {
             _context.Designations.Remove(designation);
+            _context.SaveChanges();
         }
     }
 
-    public void EditDesignation(Designation des)
+    public void EditDesignation(DesignationModel des)
     {
         var designation = _context.Designations.FirstOrDefault(d => d.DesignationId == des.DesignationId);
         designation.DesignationName = des.DesignationName;
+        _context.SaveChanges();
+    }
+
+    public void AddDesignation(DesignationModel model)
+    {
+        var newDesignation = new Designation {
+            DesignationName = model.DesignationName
+        };
+
+        _context.Designations.Add(newDesignation);
         _context.SaveChanges();
     }
 }

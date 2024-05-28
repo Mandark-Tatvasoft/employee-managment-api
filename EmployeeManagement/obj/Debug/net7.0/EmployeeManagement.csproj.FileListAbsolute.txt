@@ -99,3 +99,9 @@ C:\Mandark\Office\employee-management\employee-managment-api\EmployeeManagement\
 C:\Mandark\Office\employee-management\employee-managment-api\EmployeeManagement\bin\Debug\net7.0\System.Web.Http.Cors.dll
 C:\Mandark\Office\employee-management\employee-managment-api\EmployeeManagement\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Mandark\Office\employee-management\employee-managment-api\EmployeeManagement\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+D:\Projects\EmployeeManagement\employee-managment-api\employeemanagement\bin\Debug\net7.0\System.Web.Cors.dll
+D:\Projects\EmployeeManagement\employee-managment-api\employeemanagement\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+D:\Projects\EmployeeManagement\employee-managment-api\employeemanagement\bin\Debug\net7.0\System.Web.Http.dll
+D:\Projects\EmployeeManagement\employee-managment-api\employeemanagement\bin\Debug\net7.0\System.Web.Http.Cors.dll
+D:\Projects\EmployeeManagement\employee-managment-api\employeemanagement\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Projects\EmployeeManagement\employee-managment-api\employeemanagement\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll

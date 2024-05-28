@@ -33,9 +33,18 @@ public class EmployeeRepo : IEmployee
         return model;
     }
 
-    public Employee GetEmployee(int id)
+    public EmployeeModel GetEmployee(int id)
     {
-        return _context.Employees.FirstOrDefault(e => e.EmployeeId == id);
+        var employee = _context.Employees.FirstOrDefault(e => e.EmployeeId == id);
+        var model = new EmployeeModel{
+            Id = employee.EmployeeId,
+            Firstname = employee.Firstname,
+            Lastname = employee.Lastname,
+            Salary = employee.Salary,
+            Designation = employee.Designation
+        };
+
+        return model;
     }
 
     public void AddEmployee(EmployeeModel employee)
@@ -51,9 +60,9 @@ public class EmployeeRepo : IEmployee
         _context.SaveChanges();
     }
 
-    public void EditEmployee(Employee employee)
+    public void EditEmployee(EmployeeModel employee)
     {
-        var emp = _context.Employees.FirstOrDefault(e => e.EmployeeId == employee.EmployeeId);
+        var emp = _context.Employees.FirstOrDefault(e => e.EmployeeId == employee.Id);
         if(emp != null)
         {
             emp.Firstname = employee.Firstname;
@@ -68,5 +77,6 @@ public class EmployeeRepo : IEmployee
     {
         var employee = _context.Employees.FirstOrDefault(e => e.EmployeeId == id);
         _context.Employees.Remove(employee);
+        _context.SaveChanges();
     }
 }

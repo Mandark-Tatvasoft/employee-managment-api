@@ -1,12 +1,15 @@
 using EmployeeManagementDAL.Data;
+using EmployeeManagementDAL.Models;
 
 namespace EmployeeManagementBLL.Repository.Interface;
 
 public interface IDesignation
 {
-    public List<Designation> GetAllDesignations();
+    public List<DesignationModel> GetAllDesignations();
 
-    public void EditDesignation(Designation des);
+    public void EditDesignation(DesignationModel des);
 
     public void DeleteDesignation(int id);
+
+    public void AddDesignation(DesignationModel model);
 }
