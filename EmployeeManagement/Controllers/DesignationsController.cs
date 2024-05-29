@@ -22,6 +22,11 @@ public class DesignationsController : ControllerBase
         return Ok(_designation.GetAllDesignations());
     }
 
+    [HttpGet("GetDesignation")]
+    public IActionResult Get(int id){
+        return Ok(_designation.GetDesignation(id));
+    }
+
     [HttpPut("EditDesignation")]
     public IActionResult Put([FromBody] DesignationModel designation)
     {

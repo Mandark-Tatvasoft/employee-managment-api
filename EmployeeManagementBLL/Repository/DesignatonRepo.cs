@@ -28,6 +28,18 @@ public class DesignatonRepo : IDesignation
 
         return model;
     }
+
+    public DesignationModel GetDesignation(int id)
+    {
+        var designation = _context.Designations.FirstOrDefault(d => d.DesignationId == id);
+        var model = new DesignationModel{
+            DesignationId = designation.DesignationId,
+            DesignationName = designation.DesignationName
+        };
+
+        return model;
+    }
+
     public void DeleteDesignation(int id)
     {
         var designation = _context.Designations.FirstOrDefault(d => d.DesignationId == id);

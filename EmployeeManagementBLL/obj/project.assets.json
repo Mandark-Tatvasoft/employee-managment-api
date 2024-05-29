@@ -696,11 +696,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj",
+      "projectUniqueName": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj",
       "projectName": "EmployeeManagementBLL",
-      "projectPath": "d:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj",
+      "projectPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj",
       "packagesPath": "C:\\Users\\pct46\\.nuget\\packages\\",
-      "outputPath": "d:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementBLL\\obj\\",
+      "outputPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementBLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pct46\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -717,8 +717,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "d:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj": {
-              "projectPath": "d:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj"
+            "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj": {
+              "projectPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementDAL\\EmployeeManagementDAL.csproj"
             }
           }
         }
