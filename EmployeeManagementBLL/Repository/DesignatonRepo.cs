@@ -18,12 +18,16 @@ public class DesignatonRepo : IDesignation
     {
         var model = new List<DesignationModel>();
         var list = _context.Designations.ToList();
-        foreach (var item in list)
+        if (list != null)
         {
-            model.Add(new DesignationModel{
-                DesignationId = item.DesignationId,
-                DesignationName = item.DesignationName
-            });
+            foreach (var item in list)
+            {
+                model.Add(new DesignationModel
+                {
+                    DesignationId = item.DesignationId,
+                    DesignationName = item.DesignationName
+                });
+            }
         }
 
         return model;
@@ -32,10 +36,12 @@ public class DesignatonRepo : IDesignation
     public DesignationModel GetDesignation(int id)
     {
         var designation = _context.Designations.FirstOrDefault(d => d.DesignationId == id);
-        var model = new DesignationModel{
-            DesignationId = designation.DesignationId,
-            DesignationName = designation.DesignationName
-        };
+        var model = new DesignationModel();
+        if (designation != null)
+        {
+            model.DesignationId = designation.DesignationId;
+            model.DesignationName = designation.DesignationName;
+        }
 
         return model;
     }
@@ -43,27 +49,51 @@ public class DesignatonRepo : IDesignation
     public void DeleteDesignation(int id)
     {
         var designation = _context.Designations.FirstOrDefault(d => d.DesignationId == id);
-        if(designation != null)
+        if (designation != null)
         {
-            _context.Designations.Remove(designation);
-            _context.SaveChanges();
+            try
+            {
+                _context.Designations.Remove(designation);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
         }
     }
 
     public void EditDesignation(DesignationModel des)
     {
         var designation = _context.Designations.FirstOrDefault(d => d.DesignationId == des.DesignationId);
-        designation.DesignationName = des.DesignationName;
-        _context.SaveChanges();
+        if (designation != null)
+        {
+            designation.DesignationName = des.DesignationName;
+            try
+            {
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
     }
 
     public void AddDesignation(DesignationModel model)
     {
-        var newDesignation = new Designation {
+        var newDesignation = new Designation
+        {
             DesignationName = model.DesignationName
         };
-
-        _context.Designations.Add(newDesignation);
-        _context.SaveChanges();
+        try
+        {
+            _context.Designations.Add(newDesignation);
+            _context.SaveChanges();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
     }
 }

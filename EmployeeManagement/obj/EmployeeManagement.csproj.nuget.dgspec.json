@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\EmployeeManagement\\employee-managment-api\\employeemanagement\\EmployeeManagement.csproj": {}
+    "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagement\\EmployeeManagement.csproj": {}
   },
   "projects": {
     "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagementBLL\\EmployeeManagementBLL.csproj": {
@@ -140,14 +140,14 @@
         }
       }
     },
-    "D:\\Projects\\EmployeeManagement\\employee-managment-api\\employeemanagement\\EmployeeManagement.csproj": {
+    "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagement\\EmployeeManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\employeemanagement\\EmployeeManagement.csproj",
+        "projectUniqueName": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagement\\EmployeeManagement.csproj",
         "projectName": "EmployeeManagement",
-        "projectPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\employeemanagement\\EmployeeManagement.csproj",
+        "projectPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagement\\EmployeeManagement.csproj",
         "packagesPath": "C:\\Users\\pct46\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\employeemanagement\\obj\\",
+        "outputPath": "D:\\Projects\\EmployeeManagement\\employee-managment-api\\EmployeeManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pct46\\AppData\\Roaming\\NuGet\\NuGet.Config",

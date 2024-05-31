@@ -16,18 +16,22 @@ public class EmployeeRepo : IEmployee
 
     public List<EmployeeModel> GetAllEmployees()
     {
-        var list = _context.Employees.ToList();
+        var list = _context.Employees.OrderBy(e => e.EmployeeId).ToList();
         var model = new List<EmployeeModel>();
 
-        foreach (var employee in list)
+        if (list.Count > 0)
         {
-            model.Add(new EmployeeModel { 
-                Id = employee.EmployeeId,
-                Firstname = employee.Firstname,
-                Lastname = employee.Lastname,
-                Salary = employee.Salary,
-                Designation = employee.Designation
-            });
+            foreach (var employee in list)
+            {
+                model.Add(new EmployeeModel
+                {
+                    Id = employee.EmployeeId,
+                    Firstname = employee.Firstname,
+                    Lastname = employee.Lastname,
+                    Salary = employee.Salary,
+                    Designation = employee.Designation
+                });
+            }
         }
 
         return model;
@@ -36,47 +40,72 @@ public class EmployeeRepo : IEmployee
     public EmployeeModel GetEmployee(int id)
     {
         var employee = _context.Employees.FirstOrDefault(e => e.EmployeeId == id);
-        var model = new EmployeeModel{
-            Id = employee.EmployeeId,
-            Firstname = employee.Firstname,
-            Lastname = employee.Lastname,
-            Salary = employee.Salary,
-            Designation = employee.Designation
-        };
-
+        var model = new EmployeeModel();
+        if (employee != null)
+        {
+            model.Id = employee.EmployeeId;
+            model.Firstname = employee.Firstname;
+            model.Lastname = employee.Lastname;
+            model.Salary = employee.Salary;
+            model.Designation = employee.Designation;
+        }
         return model;
     }
 
     public void AddEmployee(EmployeeModel employee)
     {
-        var model = new Employee {
+        var model = new Employee
+        {
             Firstname = employee.Firstname,
             Lastname = employee.Lastname,
             Designation = employee.Designation,
             Salary = employee.Salary,
         };
-        
-        _context.Employees.Add(model);
-        _context.SaveChanges();
+        try
+        {
+            _context.Employees.Add(model);
+            _context.SaveChanges();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
     }
 
     public void EditEmployee(EmployeeModel employee)
     {
         var emp = _context.Employees.FirstOrDefault(e => e.EmployeeId == employee.Id);
-        if(emp != null)
+        if (emp != null)
         {
             emp.Firstname = employee.Firstname;
             emp.Lastname = employee.Lastname;
             emp.Salary = employee.Salary;
             emp.Designation = employee.Designation;
-            _context.SaveChanges();
+            try
+            {
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
         }
     }
 
     public void DeleteEmployee(int id)
     {
         var employee = _context.Employees.FirstOrDefault(e => e.EmployeeId == id);
-        _context.Employees.Remove(employee);
-        _context.SaveChanges();
+        if (employee != null)
+        {
+            try
+            {
+                _context.Employees.Remove(employee);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
     }
 }

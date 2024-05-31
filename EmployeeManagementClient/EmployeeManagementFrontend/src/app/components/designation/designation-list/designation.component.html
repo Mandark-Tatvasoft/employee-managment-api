@@ -1,0 +1,36 @@
+<div class="mt-5">
+  <div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" (click)="addDesignation()">
+      Add Designation
+    </button>
+  </div>
+
+  <table class="table table-hover mt-3">
+    <thead>
+      <tr>
+        <th>Designation Id</th>
+        <th>Name</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of response.data">
+        <td>
+          {{ item.designationId }}
+        </td>
+        <td>
+          {{ item.designationName }}
+        </td>
+        <td class="text-end w-25">
+          <button
+            type="button"
+            class="btn btn-primary me-2"
+            (click)="editDesignation(item.designationId)"
+          >
+            Edit
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

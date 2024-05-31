@@ -21,19 +21,43 @@ public class EmployeesController : ControllerBase
     [HttpGet("GetAllEmployees")]
     public IActionResult Get()
     {
-        return Ok(_employee.GetAllEmployees());
+        var model = new ResponseModel<List<EmployeeModel>>();
+        var data = _employee.GetAllEmployees();
+        if(data.Count > 0){
+            model.Data = data;
+            model.IsSuccess = true;
+            return Ok(model);
+        }
+        else
+        {
+            model.IsSuccess = false;
+            model.Message = "No Employees Found";
+            return NotFound(model);
+        }
+        
     }
 
     [HttpGet("GetEmployee")]
     public IActionResult Get(int id)
     {
-        return Ok(_employee.GetEmployee(id));
+        var model = new ResponseModel<EmployeeModel>();
+        var data = _employee.GetEmployee(id);
+        if(data.Id != 0){
+            model.Data = data;
+            model.IsSuccess = true;
+            return Ok(model);
+        }
+        else{
+            model.IsSuccess = false;
+            model.Message = "Data not found!";
+            return Ok(model);
+        }
     }
 
     [HttpPost("AddEmployee")]
     public IActionResult Post([FromBody] EmployeeModel employee)
     {
-        _employee.AddEmployee(employee);    
+        _employee.AddEmployee(employee);
         return Ok();
     }
 

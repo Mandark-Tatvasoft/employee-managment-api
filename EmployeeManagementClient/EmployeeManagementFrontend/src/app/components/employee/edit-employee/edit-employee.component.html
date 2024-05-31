@@ -1,0 +1,54 @@
+<div class="d-flex justify-content-center mt-5">
+  <div class="w-50">
+    <div class="d-flex justify-content-center mb-4">
+      <h3>Edit Employee</h3>
+    </div>
+    <form id="employeeForm" (ngSubmit)="editEmployee()">
+      <input [(ngModel)]="employeeDetails.data.id" name="id" type="hidden" />
+      <div class="mb-3">
+        <label>First Name</label>
+        <input
+          type="text"
+          class="form-control mt-2"
+          name="firstname"
+          [(ngModel)]="employeeDetails.data.firstname"
+        />
+      </div>
+      <div class="mb-3">
+        <label>Last Name</label>
+        <input
+          type="text"
+          class="form-control mt-2"
+          name="lastname"
+          [(ngModel)]="employeeDetails.data.lastname"
+        />
+      </div>
+      <div class="mb-3">
+        <label>Salary</label>
+        <input
+          type="number"
+          class="form-control mt-2"
+          name="salary"
+          [(ngModel)]="employeeDetails.data.salary"
+        />
+      </div>
+      <div class="mb-3">
+        <label>Designation</label>
+        <select
+          class="form-select"
+          [(ngModel)]="employeeDetails.data.designation"
+          name="designation"
+        >
+          @for(item of designations.data; track $index){
+          <option [value]="item.designationId">
+            {{ item.designationName }}
+          </option>
+          }
+        </select>
+      </div>
+      <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-primary mt-3">Ok</button>
+      </div>
+    </form>
+  </div>
+</div>

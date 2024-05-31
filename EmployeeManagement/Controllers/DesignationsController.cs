@@ -19,12 +19,40 @@ public class DesignationsController : ControllerBase
     [HttpGet("GetAllDesignations")]
     public IActionResult Get()
     {
-        return Ok(_designation.GetAllDesignations());
+        var model = new ResponseModel<List<DesignationModel>>();
+        var data = _designation.GetAllDesignations();
+
+        if (data.Count > 0)
+        {
+            model.Data = data;
+            model.IsSuccess = true;
+            return Ok(model);
+        }
+        else
+        {
+            model.IsSuccess = false;
+            model.Message = "No designation found!";
+            return NotFound(model);
+        }
     }
 
     [HttpGet("GetDesignation")]
-    public IActionResult Get(int id){
-        return Ok(_designation.GetDesignation(id));
+    public IActionResult Get(int id)
+    {
+        var model = new ResponseModel<DesignationModel>();
+        var data = _designation.GetDesignation(id);
+        if (data.DesignationId != 0)
+        {
+            model.Data = data;
+            model.IsSuccess = true;
+            return Ok(model);
+        }
+        else
+        {
+            model.IsSuccess = false;
+            model.Message = "No such record exists!";
+            return NotFound(model);
+        }
     }
 
     [HttpPut("EditDesignation")]
